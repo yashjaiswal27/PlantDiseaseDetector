@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANT DISEASE CLASSIFIER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav_links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#detector">Detector</a></li>
+            <li><a href="#description">Description</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- <a class="github-fork-ribbon" href="https://url.to-your.repo" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a> -->
+    <section>
+        <a name="home"></a>
+        <div class="heading">
+            <div class="heading_text">
+                <h1>Plant Disease</h1>
+                <h1>Detector</h1>
+            </div>
+            <br>
+            <div class="headingline1">
+                <h3>Insert Image. Get Results !!</h3>
+            </div>
+            <div class="headingline2">
+                <h3>Give You The Most Accurate Results</h3>
+            </div>
+        </div>
+            
+    </section>
+    
+    <!-- <p>Built with ❤️ for Farmers using (Tensorflow, Tensorflow.js, Python, Javascript, HTML5)</p> -->
+    <!-- <hr> -->
+
+
+    <div class="upload-btn-wrapper">
+        <a name="detector"></a>
+        <!-- <div class="upload_image">
+        </div>         -->
+        <button class="btn upload-file font-weight-500">
+            <span class="upload-btn">
+                <div class="upload_heading">
+            <h3>Detector</h3>
+        </div>
+                <i class="material-icons d-block font-50 pb-2">cloud_upload</i>
+                <!-- <i class="fas fa-2x fa-file-upload" id="newButton"></i> -->
+                <p id="choose-text-1">Upload Leaf Image Here</p>
+            </span>
+            <span class="upload-select-button" id="blankFile-1">
+                (*Supports .png, .jpg, .jpeg, .jfif)
+            </span>
+            <span class="success-1">
+                <i class="material-icons text-success">check</i>
+            </span>
+        </button>
+        <input type="file" name="uploadImage" id="uploadImage">
+    </div>
+
+    <!-- <p class = "tutorial">😇 Check out how and why this was built <a href="https://medium.com/@rexsimiloluwa/building-a-plant-disease-classification-web-app-in-keras-and-tensorflow-js-d435829213fa" target="blank">HERE</a> 
+        → Download test images <a href="https://github.com/rexsimiloluwah/PLANT-DISEASE-CLASSIFIER-WEB-APP-TENSORFLOWJS/tree/master/test-dataset" target="blank">HERE</a> </p> -->
+
+        <p class = "tutorial">Get Test Images <a href="https://github.com/rexsimiloluwah/PLANT-DISEASE-CLASSIFIER-WEB-APP-TENSORFLOWJS/tree/master/test-dataset" target="blank">CLick Here</a> </p>
+
+    <div class="row">
+        <div class="box">
+            <!-- <img src="" alt="" id="image" width="350" height="224"> -->
+            <img src="" alt="" id="image">
+        </div>
+        
+        <div class="box box-result">
+            <div class="init_status"></div>
+            <div>
+                <h2>Disease Detected - <span class="pred_class"></span></h2>
+                
+            </div>
+            <div class="accuracy">
+                <div class="progress" id="progress">
+                    <div class="inner">
+                      
+                    </div>
+                  </div>
+
+            </div>
+            <p style="padding : 10px;"> ACCURACY : <b><span class="confidence"></span></b> %</p>
+        </div>
+    </div>
+
+    <div class="description">
+        <a name="description"></a>
+        <div class="desc_heading">
+            <h2>Description</h2>
+        </div>
+        <div class="desc_text">
+            Plant diseases and pest infestation are major issues faced by farmers every year. Pests and Diseases result in the destruction of crops or part of the plant resulting in decreased food production leading to food insecurity. Understanding the disease and the development process is the first step towards successful disease management. To solve this problem comprehensively, we have made this web app so that anyone could easily find out the specific plant disease and get its cure fast. The dataset that we have used was collected via Kaggle API, the model was built using Keras MobileNet and finally deployed the model using tensorflow.js. Hopefully, this will help people a lot.
+        </div>
+        <div class="upload_image">
+        </div> 
+    </div>
+    <br><br>
+
+    <div class="contributers">
+        <a name="about"></a>
+        <div class="cont_heading">
+            <h2>Contributers</h2>
+        </div>
+    </div>
+
+    <div class="cont_text">
+        <div class="profile1">
+            <img src="./images/p1.jpeg" height="200px" width="200px" id="pro1">
+            <ul>
+                <li><b>Aritra Nandi<b></li>
+                <li>B.Tech undergrad, KIIT University</li>
+                <li>imaritranandi@gmail.com</li>
+            </ul>
+        </div>
+        <div class="profile2">
+            <img src="./images/p2.jpeg" height="200px" width="200px" id="pro2">
+            <ul>
+                <li><b>Yash Jaiswal<b></li>
+                <li>B.Tech undergrad, KIIT University</li>
+                <li>yashjaiswal.0270102@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+<!-- 
+        <div class="thank">
+            <ul><b>
+                <li>Thank You</li>
+                <li>For Visiting</li>
+            </b></ul>
+        </div> -->
+
+    <div class="copyright">
+        Copyright © 2021 PDD. All rights reserved.
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/2.0.1/tf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
+    <script src="script.js"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Kalam&family=Lato&family=Patrick+Hand&display=swap');</style>
+</body>
+</html>

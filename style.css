@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Kalam&family=Lato&family=Montserrat&family=Patrick+Hand&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html,body{
+    background: rgb(177, 207, 160);
+    font-family: 'Montserrat', sans-serif;
+}
+
+li, a {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+
+}
+
+/* NAV STATRTS */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #5f9159;
+    color: white;
+    align-items: center;
+    padding: 10px 20px;
+    height: 75px;
+    width: 100%;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: rgb(52, 59, 50);
+}
+/* NAV ENDS */
+
+/* HEADING STARTS */
+.heading{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url('./images/pic2.jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+
+.heading_text{
+    color: rgb(199, 214, 191);
+    text-align: center;
+    font-size: 4vw;
+    width: 100%;
+    position: relative;
+}
+
+.headingline1{
+    padding: 50px 0 0 0 ;
+    color: rgb(199, 214, 191);
+    text-align: center;
+    font-size: 5vh;
+    width: 100%;
+    position: relative;
+}
+
+.headingline2{
+    padding: 10px;
+    color: rgb(199, 214, 191);
+    text-align: center;
+    font-size: 3vh;
+    width: 100%;
+    position: relative;
+}
+/* HEADING ENDS */
+
+hr{
+    margin: 350px 0px;
+}
+
+
+/* UPLOAD SECTION STARTS */
+.upload-btn-wrapper{
+    position: relative;
+    overflow:hidden;
+    display:inline-block;
+    cursor:pointer;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.upload_heading{
+    font-size: 4vh;
+    color: white;
+}
+
+.upload-file{
+    border:2px dashed rgb(177, 207, 160);
+    /* background: rgb(177, 207, 160); */
+    background: rgb(177, 207, 160);
+    width:100%;
+    height:250px;
+    font-size:15px;
+    cursor: pointer;
+}
+.upload-btn-wrapper input[type=file]{
+    width:100%;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    opacity: 0;
+    cursor: pointer;
+    min-height: 300px;
+}
+
+.success-1, .success-2{
+    display:none;
+    color: rgb(255, 255, 255);
+}
+.success-1 i, .success-2 i{
+    font-size: 18px !important;
+    margin-left:6px;
+    margin-top:4px;
+    color: white;
+    border: 1px solid limegreen;
+    padding: 5px;
+    border-radius: 50%;
+}
+.font-50{
+    font-size:50px;
+}
+.d-block{
+    display:block;
+}
+.btn .upload-file{
+    font-size: 30px;
+}
+.upload-btn{
+    display:block;
+    font-size: 18px;    
+    color: limegreen;
+}
+
+.upload-btn i{
+    font-size: 100px;
+}
+
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    margin: 20px auto;
+    }
+    
+.box{
+    width: 45%;
+}
+
+.box img{
+    height: auto;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.box img{
+    border-radius: 20px;
+    height: 350px;
+}
+
+.box-result p{
+    background: limegreen;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display : none;
+    text-align: center;
+}
+
+
+.box-result{
+    display: none;
+}
+
+.accuracy{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+.progress {
+width: 130px;
+height: 130px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.progress > .inner {
+position: absolute;
+color: limegreen; 
+border: 1px solid #9b9b9b;
+}
+
+.progress > svg {
+height: 100%;
+display: block;
+}
+
+.init_status{
+    background: limegreen;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: ease-in-out .5s;
+    text-align: center;
+    margin: 10px 0px;
+
+}
+
+@media (max-width: 768px){
+    .box{
+        width: 100%;
+    }
+}
+
+.tutorial{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    font-size: 3vh;
+    text-align: center;
+    color: #222222;
+}
+
+.tutorial a{
+    font-size: 2.5vh;
+    color: rgb(66, 145, 66);
+}
+
+path {
+    stroke: limegreen;
+    stroke-width: 10;
+    fill-opacity: 0.2;
+}
+/* UPLOAD SECTION ENDS */
+
+/* DESCRIPTION STARTS */
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    border-radius: 50px;
+    background-image: url("./images/back2.jpg");
+    height: 500px;
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+
+}
+
+.desc_heading{
+    color: white;
+    padding: 10px;
+    font-size: 4vh;
+}
+
+.desc_text{
+    font-size: 3vh;
+    padding: 30px 80px;
+    color: white;
+}
+/* DESCRIPTION ENDS */
+
+
+/* CONTRIBUTORS SECTION STARTS */
+.contributers{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #5f9159;
+    color: white;
+    align-items: center;
+    
+    height: 50px;
+    width: 100%;
+}
+
+.cont_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #5f9159;
+    color: white;
+    
+    height: 250px;
+    width: 100%;
+}
+
+.profile1{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;  
+    align-items: center;
+    justify-content: center;
+}   
+
+.profile1 img{
+    padding: 10px 10px;
+}
+.profile1 ul{
+    padding: 10px 10px;
+}
+
+
+.profile2{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;  
+    background-color: #509449;
+    align-items: center;
+    justify-content: center;
+}   
+
+.profile2 img{
+    padding: 10px 10px;
+}
+.profile2 ul{
+    padding: 10px 10px;
+}
+
+.cont_text img{
+    border-radius: 100px;
+}
+/* CONTRIBUTORS SECTION ENDS */
+
+/* THANK SECTION STARTS*/
+/* .thank{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 5vh;
+}
+
+.thank ul{
+    font-size: 4vh; 
+}*/
+/* THANK SECTION ENDS */
+
+/* COPYRIGHT STARTS */
+.copyright{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 20px;
+    align-items: center;
+    font-size: 2vh;
+    width: 80%;
+    height: 100px;
+}
+/* COPYRIGHT ENDS */
