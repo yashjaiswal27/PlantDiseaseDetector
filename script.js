@@ -31,7 +31,7 @@ let pconf = document.querySelector('.box-result p')
             let status = document.querySelector('.init_status')
             status.innerHTML = 'Loading Model .... <span class="fa fa-spinner fa-spin"></span>'
             model = await tf.loadLayersModel('./tensorflowjs-model/model.json');
-            status.innerHTML = 'Model Loaded Successfully  <span class="fa fa-check"></span>'
+            status.innerHTML = 'Status : Done  <span class="fa fa-check"></span>'
         }
 
         async function predict() {
@@ -48,7 +48,7 @@ let pconf = document.querySelector('.box-result p')
                     
                     class_idx = Array.from(predicted_class.dataSync())[0]
                     document.querySelector('.pred_class').innerHTML = data[class_idx]
-                    document.querySelector('.inner').innerHTML = `${parseFloat(prediction[class_idx]*100).toFixed(2)}% SURE`
+                    document.querySelector('.inner').innerHTML = `${parseFloat(prediction[class_idx]*100).toFixed(2)}%`
                     console.log(data)
                     console.log(data[class_idx])
                     console.log(prediction)
