@@ -30,6 +30,7 @@ nav{
     padding: 10px 20px;
     height: 75px;
     width: 100%;
+    position: fixed;
 }
 
 .nav_links li{
