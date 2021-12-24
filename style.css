@@ -129,6 +129,10 @@ hr{
     margin: 350px 0px;
 }
 
+/* .space{
+    padding: 50% 0% 0% 0%;
+} */
+
 
 /* UPLOAD SECTION STARTS */
 .upload-btn-wrapper{
@@ -144,6 +148,7 @@ hr{
 .upload_heading{
     font-size: 5vh;
     color: rgb(43, 114, 41);
+    padding: 5% 0% 0% 0%;
 }
 
 .upload-file{
@@ -317,14 +322,14 @@ path {
    
     border-radius: 50px;
     background-image: url("./images/back2.jpg");
-    height: 540px;
-    width: 94%;
+    height: auto;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
     background-position: top center;
     position: relative;
-    padding: 0 75px;
+    padding: 5% 7%;
 
 }
 
@@ -356,10 +361,13 @@ path {
     
     height: 50px;
     width: 100%;
+
+    padding: 2% 0% 4% 0%;
 }
 
 .cont_heading{
     font-size: 4vh;
+    /* padding: 0% 0% 5% 0%; */
 }
 
 .cont_text{
@@ -402,6 +410,7 @@ path {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0% 2%;
 }
 
 .profile2{
@@ -431,6 +440,19 @@ path {
 }
 /* CONTRIBUTORS SECTION ENDS */
 
+/* THANK SECTION STARTS*/
+/* .thank{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 5vh;
+}
+
+.thank ul{
+    font-size: 4vh; 
+}*/
+/* THANK SECTION ENDS */
 
 /* COPYRIGHT STARTS */
 .copyright{
